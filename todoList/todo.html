@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <style>
+      .container {
+        display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(19 18 18);
+      }
+      p{
+      
+    font-size: 19px;
+    padding: 13px 7px;
+    margin: 9px 0px;
+    color: #644ee6;
+    border-radius: 3px;
+    border-width: 8px;
+    border-left-style: solid;
+    border-color: yellowgreen;
+    background: #f4f4f4;
+      }
+      
+      #inputItem
+      {
+        padding: 11px 14px;
+    margin-left: 11px;
+    font-size: 19px;
+    border-radius: 5px;
+      }
+      button{
+        padding: 11px 30px;
+    border-radius: 5px;
+    margin-left: 11px;
+    font-size: 19px;
+    background: limegreen;
+    color: white;
+      }
+
+      div#items{
+          width:25%;
+      }
+      small{
+          color:white;
+          display: block;
+      }
+        
+      
+    </style>
+  </head>
+  <body>
+    <div class="container" id='div'>
+      <div style="width: 90%;display: flex;justify-content: center;align-items: center;margin-top: 30px;">
+        <input
+          type="text"
+          placeholder="Enter Your task for today!!"
+          id="inputItem"
+        /><button id="btn">Add</button> // onclick="addToList()"
+        
+       </div>
+       <small>Guide 1: Single click for completed task</small>
+        <small>Guide 2: Double click for deletion of task</small>
+      <div id="items">
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
